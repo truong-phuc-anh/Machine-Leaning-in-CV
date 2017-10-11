@@ -1,10 +1,10 @@
-# Apply Agglomerative on labeled face dataset
+# Apply Agglomerative on car data set
 # Author: Trinh Man Hoang - 14520320
-# Last Updated: 5/10/2017
+# Last Updated: 11/10/2017
 
 
 from matplotlib import pyplot as plt
-from ThucHanh_1.BaiTap_3.PreparedData import load
+from ThucHanh_1.BaiTap_4.PreparedData import load
 from sklearn.decomposition import PCA
 from sklearn.cluster import AgglomerativeClustering
 
@@ -17,5 +17,5 @@ y = AgglomerativeClustering(n_clusters=7).fit_predict(X)
 
 # Visualize result
 plt.scatter(X[:, 0], X[:, 1], c=y)
-plt.title('Bai Tap 3 - Agglomerative')
+plt.title('Bai Tap 4 - Agglomerative')
 plt.show()
